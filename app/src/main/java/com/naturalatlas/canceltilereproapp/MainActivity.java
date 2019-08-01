@@ -21,7 +21,6 @@ import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
-    private static final String TOPO_STYLE_URL = "https://naturalatlas-gl.global.ssl.fastly.net/styles/cotrex-topo-v3.json";
 
     private MapView mapView;
     private MyGeometryProvider geometryProvider;
@@ -57,10 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 map.setMinZoomPreference(4);
                 map.getUiSettings().setRotateGesturesEnabled(false);
 
-                final Style.Builder styleBuilder = new Style.Builder();
-                styleBuilder.fromUri(TOPO_STYLE_URL);
-
-                mapboxMap.setStyle(styleBuilder, new Style.OnStyleLoaded() {
+                mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
                     @Override
                     public void onStyleLoaded(@NonNull Style style) {
 
