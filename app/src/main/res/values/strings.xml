@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">CancelTileReproApp</string>
+  <string name="mapbox_access_token">insert-access-token-here</string>
+</resources>
