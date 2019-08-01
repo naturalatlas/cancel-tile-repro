@@ -22,8 +22,6 @@ import java.util.TimerTask;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private static final String TOPO_STYLE_URL = "https://naturalatlas-gl.global.ssl.fastly.net/styles/cotrex-topo-v3.json";
-    private static final String SATELLITE_STYLE_URL = "https://naturalatlas-gl.global.ssl.fastly.net/styles/cotrex-topo-v3.json";
-
 
     private MapView mapView;
     private MyGeometryProvider geometryProvider;
